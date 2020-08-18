@@ -1,4 +1,7 @@
-#Tue Aug 11 10:37:28 BST 2020
-base.0=/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/transforms/dexMerger/debug/0
+#Tue Aug 18 12:00:25 BST 2020
+base.0=/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex

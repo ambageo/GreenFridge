@@ -4,24 +4,35 @@ ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/
 INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:2:1-81:12
 INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:2:1-81:12
 INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:2:1-81:12
-MERGED from [com.android.support:design:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/4d5b81722f7350120cf899a7b4deccfb/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/d35903fee4f7f61c6cf9429770484038/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/4e80319188313c65da6fb2f8f3414691/AndroidManifest.xml:17:1-22:12
-MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:17:1-42:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/george/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ae1a1bd176ebbb26ee3ed067d414d6ca/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v4:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/ebb7f80cee09bf4e47519ef949db8bc1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/e8aa1c2e5ca9d2da43c781562e9369e6/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/8260903604ce9871837e0b16f5c8e3bb/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/2905aef8f24af0790ef0db36f0c19f7d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/11ba0297a21589a952af818ab85fa358/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/2665817028956a10fce2272bf04e364c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/440ee8b9d1679c8d78d824192373026f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/d5f97245b9000b7318a0a930cfa02ca5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e3b485afc4f8f64d04fe9f62fc7b38f9/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9b501eae93df3a75e74f0a43877244a9/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/e313836340f080c0fd9ca38538ef4032/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/64cf40c42401b5e289a12d45eefa4931/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a7fd7bb307b29e9cd0ebf420bbb2f3c2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.2.0] /Users/george/.gradle/caches/transforms-2/files-2.1/60cce34bb56265cf1feeca71b573f3fc/material-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/9b843ef8b45a09e63c481ebf2cc33a53/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/bf9fe2c920747fc8887d65d599c47d6a/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3a4bf45ee1cd2799bf6d0559eb3917d7/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:17:1-42:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/george/.gradle/caches/transforms-2/files-2.1/28120aa98d624ce8fee0a8087788fd91/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/6cac2e40aaad7d17efd78ef41d825d1b/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/385ad0333dd34005ac3b322f68c176b9/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/ce61250d0f7070aaab97d5c03ab2ab2e/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/32e32c376d22cae962a95f2aba892822/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/e968a555a0e08b03627a3441cae31e6b/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/c53a1cf06eec9ec8e2c1fa79d76edf7f/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/george/.gradle/caches/transforms-2/files-2.1/cfb35286f1f1bc3e2a27eb826e35e1e0/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/george/.gradle/caches/transforms-2/files-2.1/5a84463fe3bd90b9ee3ed76258f5efd9/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3cf213e33fb5a76421a4e937ff33f07e/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/bde687302d742df89f7d227a2e48b0d9/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/c3d8ec33b66c793058ded980a54c4fd5/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/4d3e32c2f901863288c7ff80fcf0967a/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.3.0] /Users/george/.gradle/caches/transforms-2/files-2.1/881ed38d8f80da7a88cb010386d80aa8/core-1.3.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/28174e475fcfd6ae966ed5772f6694ac/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3c1a5ebf565097fe10667d6b9a2c1703/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3f5e37635a712470204c0315e55f1003/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/552d05fff7df0b1caee9db39c74659fe/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/8a52da53b02a83b08615debb9b2e109c/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3e5d045fdd42de39d437ce94a2ff87c7/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/ed8cc0ac00b11c0234ef1e5a578c70c1/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/df4d09f70e3f533a2fede8f96085147c/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/c16c855844b564ee7204d4d6005470fb/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/092f4390277122706e821c5ccddc7546/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
 INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:2:1-81:12
 INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:2:1-81:12
 INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:2:1-81:12
@@ -49,10 +60,18 @@ ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/
 		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:6:22-78
 application
 ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:8:5-79:19
-MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:26:5-40:19
-MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:26:5-40:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/george/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ae1a1bd176ebbb26ee3ed067d414d6ca/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/george/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ae1a1bd176ebbb26ee3ed067d414d6ca/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.material:material:1.2.0] /Users/george/.gradle/caches/transforms-2/files-2.1/60cce34bb56265cf1feeca71b573f3fc/material-1.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.0] /Users/george/.gradle/caches/transforms-2/files-2.1/60cce34bb56265cf1feeca71b573f3fc/material-1.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:26:5-40:19
+MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:26:5-40:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/george/.gradle/caches/transforms-2/files-2.1/28120aa98d624ce8fee0a8087788fd91/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/george/.gradle/caches/transforms-2/files-2.1/28120aa98d624ce8fee0a8087788fd91/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.3.0] /Users/george/.gradle/caches/transforms-2/files-2.1/881ed38d8f80da7a88cb010386d80aa8/core-1.3.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.0] /Users/george/.gradle/caches/transforms-2/files-2.1/881ed38d8f80da7a88cb010386d80aa8/core-1.3.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3c1a5ebf565097fe10667d6b9a2c1703/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3c1a5ebf565097fe10667d6b9a2c1703/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.0] /Users/george/.gradle/caches/transforms-2/files-2.1/881ed38d8f80da7a88cb010386d80aa8/core-1.3.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
 		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:13:9-35
 	android:label
@@ -147,42 +166,64 @@ uses-sdk
 INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
 INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/4d5b81722f7350120cf899a7b4deccfb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/4d5b81722f7350120cf899a7b4deccfb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/d35903fee4f7f61c6cf9429770484038/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/d35903fee4f7f61c6cf9429770484038/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/4e80319188313c65da6fb2f8f3414691/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/4e80319188313c65da6fb2f8f3414691/AndroidManifest.xml:20:5-44
-MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:22:5-24:41
-MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/george/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ae1a1bd176ebbb26ee3ed067d414d6ca/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/george/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ae1a1bd176ebbb26ee3ed067d414d6ca/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-v4:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/ebb7f80cee09bf4e47519ef949db8bc1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/ebb7f80cee09bf4e47519ef949db8bc1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/e8aa1c2e5ca9d2da43c781562e9369e6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/e8aa1c2e5ca9d2da43c781562e9369e6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/8260903604ce9871837e0b16f5c8e3bb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/8260903604ce9871837e0b16f5c8e3bb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/2905aef8f24af0790ef0db36f0c19f7d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/2905aef8f24af0790ef0db36f0c19f7d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/11ba0297a21589a952af818ab85fa358/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/11ba0297a21589a952af818ab85fa358/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/2665817028956a10fce2272bf04e364c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/2665817028956a10fce2272bf04e364c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/440ee8b9d1679c8d78d824192373026f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/440ee8b9d1679c8d78d824192373026f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/d5f97245b9000b7318a0a930cfa02ca5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/d5f97245b9000b7318a0a930cfa02ca5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e3b485afc4f8f64d04fe9f62fc7b38f9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e3b485afc4f8f64d04fe9f62fc7b38f9/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9b501eae93df3a75e74f0a43877244a9/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9b501eae93df3a75e74f0a43877244a9/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/e313836340f080c0fd9ca38538ef4032/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/e313836340f080c0fd9ca38538ef4032/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/64cf40c42401b5e289a12d45eefa4931/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/64cf40c42401b5e289a12d45eefa4931/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a7fd7bb307b29e9cd0ebf420bbb2f3c2/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a7fd7bb307b29e9cd0ebf420bbb2f3c2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.0] /Users/george/.gradle/caches/transforms-2/files-2.1/60cce34bb56265cf1feeca71b573f3fc/material-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.0] /Users/george/.gradle/caches/transforms-2/files-2.1/60cce34bb56265cf1feeca71b573f3fc/material-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/9b843ef8b45a09e63c481ebf2cc33a53/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/9b843ef8b45a09e63c481ebf2cc33a53/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/bf9fe2c920747fc8887d65d599c47d6a/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/bf9fe2c920747fc8887d65d599c47d6a/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3a4bf45ee1cd2799bf6d0559eb3917d7/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3a4bf45ee1cd2799bf6d0559eb3917d7/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:22:5-24:41
+MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:22:5-24:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/george/.gradle/caches/transforms-2/files-2.1/28120aa98d624ce8fee0a8087788fd91/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/george/.gradle/caches/transforms-2/files-2.1/28120aa98d624ce8fee0a8087788fd91/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/6cac2e40aaad7d17efd78ef41d825d1b/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/6cac2e40aaad7d17efd78ef41d825d1b/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/385ad0333dd34005ac3b322f68c176b9/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/385ad0333dd34005ac3b322f68c176b9/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/ce61250d0f7070aaab97d5c03ab2ab2e/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/ce61250d0f7070aaab97d5c03ab2ab2e/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/32e32c376d22cae962a95f2aba892822/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/32e32c376d22cae962a95f2aba892822/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/e968a555a0e08b03627a3441cae31e6b/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/e968a555a0e08b03627a3441cae31e6b/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/c53a1cf06eec9ec8e2c1fa79d76edf7f/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/c53a1cf06eec9ec8e2c1fa79d76edf7f/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/george/.gradle/caches/transforms-2/files-2.1/cfb35286f1f1bc3e2a27eb826e35e1e0/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/george/.gradle/caches/transforms-2/files-2.1/cfb35286f1f1bc3e2a27eb826e35e1e0/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/george/.gradle/caches/transforms-2/files-2.1/5a84463fe3bd90b9ee3ed76258f5efd9/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/george/.gradle/caches/transforms-2/files-2.1/5a84463fe3bd90b9ee3ed76258f5efd9/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3cf213e33fb5a76421a4e937ff33f07e/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3cf213e33fb5a76421a4e937ff33f07e/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/bde687302d742df89f7d227a2e48b0d9/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/bde687302d742df89f7d227a2e48b0d9/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/c3d8ec33b66c793058ded980a54c4fd5/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/c3d8ec33b66c793058ded980a54c4fd5/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/4d3e32c2f901863288c7ff80fcf0967a/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/4d3e32c2f901863288c7ff80fcf0967a/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.0] /Users/george/.gradle/caches/transforms-2/files-2.1/881ed38d8f80da7a88cb010386d80aa8/core-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.0] /Users/george/.gradle/caches/transforms-2/files-2.1/881ed38d8f80da7a88cb010386d80aa8/core-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/28174e475fcfd6ae966ed5772f6694ac/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/28174e475fcfd6ae966ed5772f6694ac/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3c1a5ebf565097fe10667d6b9a2c1703/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3c1a5ebf565097fe10667d6b9a2c1703/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3f5e37635a712470204c0315e55f1003/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3f5e37635a712470204c0315e55f1003/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/552d05fff7df0b1caee9db39c74659fe/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/george/.gradle/caches/transforms-2/files-2.1/552d05fff7df0b1caee9db39c74659fe/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/8a52da53b02a83b08615debb9b2e109c/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/8a52da53b02a83b08615debb9b2e109c/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3e5d045fdd42de39d437ce94a2ff87c7/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/3e5d045fdd42de39d437ce94a2ff87c7/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/ed8cc0ac00b11c0234ef1e5a578c70c1/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/ed8cc0ac00b11c0234ef1e5a578c70c1/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/df4d09f70e3f533a2fede8f96085147c/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/df4d09f70e3f533a2fede8f96085147c/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/c16c855844b564ee7204d4d6005470fb/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/c16c855844b564ee7204d4d6005470fb/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/092f4390277122706e821c5ccddc7546/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/092f4390277122706e821c5ccddc7546/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
 INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
 INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -194,16 +235,16 @@ INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/ma
 		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
 service#com.firebase.jobdispatcher.GooglePlayReceiver
-ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:32:9-39:19
+ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:32:9-39:19
 	android:exported
-		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:34:13-36
+		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:34:13-36
 	android:permission
-		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:35:13-93
+		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:35:13-93
 	android:name
-		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:33:13-73
+		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:33:13-73
 intent-filter#action:name:com.google.android.gms.gcm.ACTION_TASK_READY
-ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:36:13-38:29
+ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:36:13-38:29
 action#com.google.android.gms.gcm.ACTION_TASK_READY
-ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:37:17-87
+ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:37:17-87
 	android:name
-		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:37:25-84
+		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:37:25-84
