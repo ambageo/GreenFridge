@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#E65100</color>
+    <color name="colorAccent">#0000EE</color>
+    <color name="background">#00B358</color>
+    <color name="colorFab">#FF5900</color>
+    <color name="expired">#F44336</color>
+    <color name="expiring">#FFEB3B</color>
+</resources>

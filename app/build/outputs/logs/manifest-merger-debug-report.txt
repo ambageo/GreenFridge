@@ -1,0 +1,209 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:2:1-81:12
+MERGED from [com.android.support:design:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/4d5b81722f7350120cf899a7b4deccfb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/d35903fee4f7f61c6cf9429770484038/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/4e80319188313c65da6fb2f8f3414691/AndroidManifest.xml:17:1-22:12
+MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:17:1-42:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/george/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ae1a1bd176ebbb26ee3ed067d414d6ca/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/ebb7f80cee09bf4e47519ef949db8bc1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/e8aa1c2e5ca9d2da43c781562e9369e6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/8260903604ce9871837e0b16f5c8e3bb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/2905aef8f24af0790ef0db36f0c19f7d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/11ba0297a21589a952af818ab85fa358/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/2665817028956a10fce2272bf04e364c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/440ee8b9d1679c8d78d824192373026f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/d5f97245b9000b7318a0a930cfa02ca5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e3b485afc4f8f64d04fe9f62fc7b38f9/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9b501eae93df3a75e74f0a43877244a9/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/e313836340f080c0fd9ca38538ef4032/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/64cf40c42401b5e289a12d45eefa4931/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a7fd7bb307b29e9cd0ebf420bbb2f3c2/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:2:1-81:12
+	package
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:3:5-48
+		INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:2:1-81:12
+		INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:2:1-81:12
+		INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:5:22-63
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:6:22-78
+application
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:8:5-79:19
+MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:26:5-40:19
+MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:26:5-40:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/george/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ae1a1bd176ebbb26ee3ed067d414d6ca/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/george/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ae1a1bd176ebbb26ee3ed067d414d6ca/AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:12:9-48
+	android:icon
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:14:9-40
+activity#com.georgeampartzidis.greenfridge.MainActivity
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:15:9-23:20
+	android:label
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:17:13-45
+	android:name
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:16:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:18:13-22:29
+action#android.intent.action.MAIN
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:21:27-74
+activity#com.georgeampartzidis.greenfridge.AddProductActivity
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:24:9-32:20
+	android:parentActivityName
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:26:13-59
+	android:name
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:25:13-47
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:29:13-31:53
+	android:value
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:31:17-50
+	android:name
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:30:17-63
+provider#com.georgeampartzidis.greenfridge.data.ProductContentProvider
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:34:9-36:71
+	android:authorities
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:36:13-68
+	android:name
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:35:13-56
+activity#com.georgeampartzidis.greenfridge.ProductsActivity
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:38:9-41:58
+	android:parentActivityName
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:41:13-55
+	android:launchMode
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:40:13-44
+	android:name
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:39:13-45
+activity#com.georgeampartzidis.greenfridge.AboutActivity
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:47:9-49:58
+	android:parentActivityName
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:49:13-55
+	android:name
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:48:13-42
+service#com.georgeampartzidis.greenfridge.sync.ExpiringProductsReminderFireJobService
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:55:9-61:19
+	android:exported
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:57:13-37
+	android:name
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:56:13-72
+intent-filter#action:name:com.firebase.jobdispatcher.ACTION_EXECUTE
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:58:13-60:29
+action#com.firebase.jobdispatcher.ACTION_EXECUTE
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:59:17-84
+	android:name
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:59:25-81
+activity#com.georgeampartzidis.greenfridge.ProductsListActivity
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:63:9-70:20
+	android:parentActivityName
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:66:13-55
+	android:launchMode
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:65:13-44
+	android:name
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:64:13-49
+activity#com.georgeampartzidis.greenfridge.AddProductToListActivity
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:71:9-78:24
+	android:parentActivityName
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:73:13-55
+	android:label
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:74:13-41
+	android:launchMode
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:72:13-44
+	android:name
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:71:19-59
+uses-sdk
+INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/4d5b81722f7350120cf899a7b4deccfb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/4d5b81722f7350120cf899a7b4deccfb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/d35903fee4f7f61c6cf9429770484038/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/d35903fee4f7f61c6cf9429770484038/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/4e80319188313c65da6fb2f8f3414691/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/4e80319188313c65da6fb2f8f3414691/AndroidManifest.xml:20:5-44
+MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:22:5-24:41
+MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/george/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ae1a1bd176ebbb26ee3ed067d414d6ca/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/george/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ae1a1bd176ebbb26ee3ed067d414d6ca/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/ebb7f80cee09bf4e47519ef949db8bc1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/ebb7f80cee09bf4e47519ef949db8bc1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/e8aa1c2e5ca9d2da43c781562e9369e6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/e8aa1c2e5ca9d2da43c781562e9369e6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/8260903604ce9871837e0b16f5c8e3bb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/8260903604ce9871837e0b16f5c8e3bb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/2905aef8f24af0790ef0db36f0c19f7d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/2905aef8f24af0790ef0db36f0c19f7d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/11ba0297a21589a952af818ab85fa358/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/11ba0297a21589a952af818ab85fa358/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/2665817028956a10fce2272bf04e364c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/2665817028956a10fce2272bf04e364c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/440ee8b9d1679c8d78d824192373026f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/440ee8b9d1679c8d78d824192373026f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/d5f97245b9000b7318a0a930cfa02ca5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/d5f97245b9000b7318a0a930cfa02ca5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e3b485afc4f8f64d04fe9f62fc7b38f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/george/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e3b485afc4f8f64d04fe9f62fc7b38f9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9b501eae93df3a75e74f0a43877244a9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9b501eae93df3a75e74f0a43877244a9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/e313836340f080c0fd9ca38538ef4032/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/e313836340f080c0fd9ca38538ef4032/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/64cf40c42401b5e289a12d45eefa4931/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/64cf40c42401b5e289a12d45eefa4931/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a7fd7bb307b29e9cd0ebf420bbb2f3c2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/george/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a7fd7bb307b29e9cd0ebf420bbb2f3c2/AndroidManifest.xml:20:5-44
+INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+service#com.firebase.jobdispatcher.GooglePlayReceiver
+ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:32:9-39:19
+	android:exported
+		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:34:13-36
+	android:permission
+		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:35:13-93
+	android:name
+		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:33:13-73
+intent-filter#action:name:com.google.android.gms.gcm.ACTION_TASK_READY
+ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:36:13-38:29
+action#com.google.android.gms.gcm.ACTION_TASK_READY
+ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:37:17-87
+	android:name
+		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.8.5.aar/c71171acb9a24fe6a61785e2e21a21d0/AndroidManifest.xml:37:25-84

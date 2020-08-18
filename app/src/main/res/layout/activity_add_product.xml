@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.georgeampartzidis.georgeampartzidis.greenfridge.AddProductActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolbar"
+        app:titleTextColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/product"
+        style="@style/editText"
+        android:hint="Product name"
+        android:inputType="text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/date"
+        style="@style/editText"
+        android:focusable="false"
+        android:hint="Expiry Date"
+        android:onClick="showDatePickerDialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product" />
+
+    <Button
+        android:id="@+id/add_button"
+        style="@style/button"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorFab"
+        android:onClick="addToFridge"
+        android:text="Add to fridge"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

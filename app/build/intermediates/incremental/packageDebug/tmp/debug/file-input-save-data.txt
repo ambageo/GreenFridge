@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Tue Aug 11 10:37:28 BST 2020
+0.baseType=DIRECTORY
+0.base=/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/transforms/dexMerger/debug/0
+0.path=classes.dex
+0.set=DEX
+count=1

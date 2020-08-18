@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Green Fridge</string>
+    <string name="list">My Shopping List</string>
+    <string name="empty_fridge">Looks like the fridge is empty... Why don\'t you add something?</string>
+    <string name="notification_title">A reminder from Green Fridge:</string>
+    <string name="many_expiring_products">You have %1$d expiring/expired products!</string>
+    <string name="one_expiring_product">You have an expiring/expired product!</string>
+
+
+    <string name="About_menu_title">ABOUT</string>
+    <string name="expired_string">EXPIRED</string>
+    <string name="today">TODAY</string>
+
+    <!-- Strings used in the "About" page -->
+    <string name="credit_fridge_icon">Icon made by RoundIcons from
+        <a href="https://www.flaticon.com/">FLATICON</a></string>
+    <string name="translation_credits">All translations provided by
+        <a href="https://www.linkedin.com/in/stella-kotzampasaki/">Stella Kotzampasaki</a></string>
+
+    <!-- Strings used for the Alert Dialogs-->
+    <string name="alert_dialog_title">Delete Product</string>
+    <string name="alert_dialog_message">Just delete it or also add it in your shopping list?</string>
+    <string name="delete_and_add_in_list">Delete &amp; add to list</string>
+    <string name="delete_and_add_in_fridge">Delete &amp; add in fridge</string>
+    <string name="delete">delete</string>
+    <string name="open_fridge">open fridge</string>
+    <string name="check_list">check my list</string>
+    <string name="alert_dialog_list_message">Just delete it or also add it in the fridge?</string>
+    <string name="cancel">cancel</string>
+</resources>
