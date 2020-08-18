@@ -1,0 +1,175 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.georgeampartzidis.greenfridge"
+4    android:versionCode="3"
+5    android:versionName="1.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.VIBRATE" />
+11-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:5:5-66
+11-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:5:22-63
+12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+12-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:6:5-81
+12-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:6:22-78
+13
+14    <application
+14-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:8:5-79:19
+15        android:allowBackup="true"
+15-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.3.0] /Users/george/.gradle/caches/transforms-2/files-2.1/881ed38d8f80da7a88cb010386d80aa8/core-1.3.0/AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:10:9-43
+19        android:label="@string/app_name"
+19-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:11:9-41
+20        android:roundIcon="@mipmap/ic_launcher"
+20-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:12:9-48
+21        android:supportsRtl="true"
+21-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:13:9-35
+22        android:testOnly="true"
+23        android:theme="@style/AppTheme" >
+23-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:14:9-40
+24        <activity
+24-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:15:9-23:20
+25            android:name="com.georgeampartzidis.greenfridge.MainActivity"
+25-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:16:13-41
+26            android:label="@string/app_name" >
+26-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:17:13-45
+27            <intent-filter>
+27-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:18:13-22:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:19:17-69
+28-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:19:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:21:17-77
+30-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:21:27-74
+31            </intent-filter>
+32        </activity>
+33        <activity
+33-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:24:9-32:20
+34            android:name="com.georgeampartzidis.greenfridge.AddProductActivity"
+34-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:25:13-47
+35            android:parentActivityName="com.georgeampartzidis.greenfridge.ProductsActivity" >
+35-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:26:13-59
+36
+37            <!-- Parent activity meta-data to support 4.0 and lower -->
+38            <meta-data
+38-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:29:13-31:53
+39                android:name="android.support.PARENT_ACTIVITY"
+39-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:30:17-63
+40                android:value=".ProductsActivity" />
+40-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:31:17-50
+41        </activity>
+42
+43        <provider
+43-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:34:9-36:71
+44            android:name="com.georgeampartzidis.greenfridge.data.ProductContentProvider"
+44-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:35:13-56
+45            android:authorities="com.georgeampartzidis.greenfridge" />
+45-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:36:13-68
+46
+47        <activity
+47-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:38:9-41:58
+48            android:name="com.georgeampartzidis.greenfridge.ProductsActivity"
+48-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:39:13-45
+49            android:launchMode="singleTask"
+49-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:40:13-44
+50            android:parentActivityName="com.georgeampartzidis.greenfridge.MainActivity" />
+50-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:41:13-55
+51
+52        <meta-data
+52-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:29:13-31:53
+53            android:name="android.support.PARENT_ACTIVITY"
+53-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:30:17-63
+54            android:value=".MainActivity" />
+54-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:31:17-50
+55
+56        <activity
+56-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:47:9-49:58
+57            android:name="com.georgeampartzidis.greenfridge.AboutActivity"
+57-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:48:13-42
+58            android:parentActivityName="com.georgeampartzidis.greenfridge.MainActivity" />
+58-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:49:13-55
+59
+60        <meta-data
+60-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:29:13-31:53
+61            android:name="android.support.PARENT_ACTIVITY"
+61-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:30:17-63
+62            android:value=".MainActivity" />
+62-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:31:17-50
+63
+64        <service
+64-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:55:9-61:19
+65            android:name="com.georgeampartzidis.greenfridge.sync.ExpiringProductsReminderFireJobService"
+65-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:56:13-72
+66            android:exported="false" >
+66-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:57:13-37
+67            <intent-filter>
+67-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:58:13-60:29
+68                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+68-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:59:17-84
+68-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:59:25-81
+69            </intent-filter>
+70        </service>
+71
+72        <activity
+72-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:63:9-70:20
+73            android:name="com.georgeampartzidis.greenfridge.ProductsListActivity"
+73-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:64:13-49
+74            android:launchMode="singleTask"
+74-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:65:13-44
+75            android:parentActivityName="com.georgeampartzidis.greenfridge.MainActivity" >
+75-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:66:13-55
+76            <meta-data
+76-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:29:13-31:53
+77                android:name="android.support.PARENT_ACTIVITY"
+77-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:30:17-63
+78                android:value=".MainActivity" />
+78-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:31:17-50
+79        </activity>
+80        <activity
+80-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:71:9-78:24
+81            android:name="com.georgeampartzidis.greenfridge.AddProductToListActivity"
+81-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:71:19-59
+82            android:label="@string/list"
+82-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:74:13-41
+83            android:launchMode="singleTask"
+83-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:72:13-44
+84            android:parentActivityName="com.georgeampartzidis.greenfridge.MainActivity" >
+84-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:73:13-55
+85            <meta-data
+85-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:29:13-31:53
+86                android:name="android.support.PARENT_ACTIVITY"
+86-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:30:17-63
+87                android:value=".MainActivity" />
+87-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:31:17-50
+88        </activity>
+89        <!--
+90             Receives GooglePlay execution requests and forwards them to the
+91             appropriate internal service.
+92        -->
+93        <service
+93-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:32:9-39:19
+94            android:name="com.firebase.jobdispatcher.GooglePlayReceiver"
+94-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:33:13-73
+95            android:exported="true"
+95-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:34:13-36
+96            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" >
+96-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:35:13-93
+97            <intent-filter>
+97-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:36:13-38:29
+98                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+98-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:37:17-87
+98-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/397220dff9e4422898299100070d9445/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:37:25-84
+99            </intent-filter>
+100        </service>
+101    </application>
+102
+103</manifest>
