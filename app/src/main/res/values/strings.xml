@@ -28,4 +28,5 @@
     <string name="alert_dialog_list_message">Just delete it or also add it in the fridge?</string>
     <string name="cancel">cancel</string>
     <string name="fridge_icon_description">Logo icon of the app</string>
+    <string name="add_product">Add product</string>
 </resources>

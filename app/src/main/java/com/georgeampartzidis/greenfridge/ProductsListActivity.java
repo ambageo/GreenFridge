@@ -83,7 +83,7 @@ public class ProductsListActivity extends AppCompatActivity implements OnClickLi
             }
 
             public void onSwiped(final ViewHolder viewHolder, int direction) {
-                ProductsListActivity.this.id = ((Long) viewHolder.itemView.getTag()).longValue();
+                ProductsListActivity.this.id = (Long) viewHolder.itemView.getTag();
                 Builder builder = new Builder(new ContextThemeWrapper(ProductsListActivity.this, R.style.CustomAlertDialog));
                 builder.setTitle((int) R.string.alert_dialog_title).setMessage((int) R.string.alert_dialog_list_message);
                 builder.setNeutralButton((int) R.string.delete_and_add_in_fridge, new DialogInterface.OnClickListener() {

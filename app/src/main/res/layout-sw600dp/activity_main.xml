@@ -35,13 +35,13 @@
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/bt_add_product"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_margin="16dp"
         android:clickable="true"
         android:onClick="addProductActivity"
-        app:backgroundTint="@color/colorFab"
+        app:backgroundTint="@color/colorButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:srcCompat="@drawable/ic_add_white_24px" />
@@ -87,7 +87,7 @@
         android:onClick="openShoppingList"
         android:text="@string/check_list"
         app:layout_constraintBottom_toBottomOf="@+id/button"
-        app:layout_constraintEnd_toStartOf="@+id/fab"
+        app:layout_constraintEnd_toStartOf="@+id/bt_add_product"
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toTopOf="@+id/button" />
 
@@ -95,16 +95,16 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="56dp"
-        android:background="@color/colorFab"
+        android:background="@color/colorButton"
         android:elevation="8dp"
         android:onClick="openFridge"
         android:padding="8dp"
         android:layout_marginLeft="16dp"
         android:text="Open Fridge"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/fab"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_add_product"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/fab" />
+        app:layout_constraintTop_toTopOf="@+id/bt_add_product" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

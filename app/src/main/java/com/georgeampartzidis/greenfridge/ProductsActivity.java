@@ -66,7 +66,7 @@ public class ProductsActivity extends AppCompatActivity implements LoaderManager
         mDb = dbHelper.getWritableDatabase();
 
         mRecyclerView = findViewById(R.id.recyclerview_products);
-        mFloatingActionButton = findViewById(R.id.fab);
+        mFloatingActionButton = findViewById(R.id.bt_add_product);
         mToolbar = findViewById(R.id.toolbar);
         mEmptyFridgeTextView= findViewById(R.id.tv_empty_fridge);
 

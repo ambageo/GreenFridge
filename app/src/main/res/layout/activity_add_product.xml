@@ -32,12 +32,11 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/product" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/add_button"
         style="@style/button"
         android:layout_marginBottom="16dp"
         android:layout_marginTop="8dp"
-        android:background="@color/colorFab"
         android:onClick="addToFridge"
         android:text="Add to fridge"
         android:textColor="@android:color/white"
