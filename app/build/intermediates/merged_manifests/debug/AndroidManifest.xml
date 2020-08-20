@@ -70,7 +70,7 @@
         </service>
 
         <activity
-            android:name="com.georgeampartzidis.greenfridge.ProductsListActivity"
+            android:name="com.georgeampartzidis.greenfridge.ShoppingListActivity"
             android:launchMode="singleTask"
             android:parentActivityName="com.georgeampartzidis.greenfridge.MainActivity" >
             <meta-data

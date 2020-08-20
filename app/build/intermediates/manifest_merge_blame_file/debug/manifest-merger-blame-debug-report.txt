@@ -121,7 +121,7 @@
 71
 72        <activity
 72-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:63:9-70:20
-73            android:name="com.georgeampartzidis.greenfridge.ProductsListActivity"
+73            android:name="com.georgeampartzidis.greenfridge.ShoppingListActivity"
 73-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:64:13-49
 74            android:launchMode="singleTask"
 74-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:65:13-44

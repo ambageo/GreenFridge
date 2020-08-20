@@ -11,7 +11,10 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         style="@style/toolbar"
-        app:titleTextColor="@android:color/white" />
+        app:titleTextColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/fridge"
@@ -60,14 +63,16 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_fridge_content"
         tools:text="There are 2 products expiring today!" />
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/bt_open_fridge"
         style="@style/button"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:onClick="openFridge"
         android:text="@string/open_fridge"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/bt_add_product"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/bt_open_shopping_list"
         app:layout_constraintTop_toTopOf="@+id/bt_add_product" />
 
     <Button
@@ -75,6 +80,9 @@
         style="@style/button"
         android:onClick="openShoppingList"
         android:text="@string/check_list"
+        android:textSize="12sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="@id/bt_add_product"
         app:layout_constraintStart_toEndOf="@id/bt_open_fridge"
         app:layout_constraintEnd_toStartOf="@id/bt_add_product"/>
@@ -84,9 +92,12 @@
         style="@style/button"
         android:onClick="addProductActivity"
         android:text="@string/add_product"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/bt_open_shopping_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         app:srcCompat="@drawable/ic_add_white_24px" />
 

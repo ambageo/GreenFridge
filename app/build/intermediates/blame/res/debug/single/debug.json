@@ -68,6 +68,10 @@
         "source": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
+        "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/drawable_product_rounded_card.xml.flat",
+        "source": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/res/drawable/product_rounded_card.xml"
+    },
+    {
         "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/layout_activity_about.xml.flat",
         "source": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/res/layout/activity_about.xml"
     },
@@ -80,10 +84,6 @@
         "source": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/res/drawable/ic_add_white_24px.xml"
     },
     {
-        "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/layout_activity_products_list.xml.flat",
-        "source": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/res/layout/activity_products_list.xml"
-    },
-    {
         "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
@@ -94,6 +94,10 @@
     {
         "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/layout_activity_add_product_to_list.xml.flat",
         "source": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/res/layout/activity_add_product_to_list.xml"
+    },
+    {
+        "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/drawable_rounded_shape.xml.flat",
+        "source": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/res/drawable/rounded_shape.xml"
     },
     {
         "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/layout-sw600dp_activity_main.xml.flat",
@@ -138,6 +142,10 @@
     {
         "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_cancel.png.flat",
         "source": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/res/drawable-xxhdpi/ic_cancel.png"
+    },
+    {
+        "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/layout_activity_shopping_list.xml.flat",
+        "source": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/res/layout/activity_shopping_list.xml"
     },
     {
         "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",

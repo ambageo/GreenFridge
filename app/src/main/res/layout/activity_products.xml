@@ -4,11 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:style="http://schemas.android.com/tools">
+   android:background="@color/cardview_light_background">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         style="@style/toolbar"
+        app:title="@string/inventory"
         app:titleTextColor="@android:color/white" />
 
     <!-- The paddingTop equal to the toolbar/actionbar is used to make RecyclerView start below the

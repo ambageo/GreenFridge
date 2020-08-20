@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     }
 
     public void openShoppingList(View view){
-        Intent addProductListIntent= new Intent(this, ProductsListActivity.class);
+        Intent addProductListIntent= new Intent(this, ShoppingListActivity.class);
         startActivity(addProductListIntent);
     }
 

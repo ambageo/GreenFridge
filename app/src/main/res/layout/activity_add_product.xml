@@ -10,6 +10,7 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         style="@style/toolbar"
+        app:title="@string/add_product"
         app:titleTextColor="@android:color/white" />
 
     <EditText

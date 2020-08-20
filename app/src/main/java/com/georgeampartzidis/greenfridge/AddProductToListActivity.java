@@ -27,7 +27,7 @@ public class AddProductToListActivity extends AppCompatActivity implements OnCli
 
         @Override
         public void onClick(View view) {
-            AddProductToListActivity.this.startActivity(new Intent(AddProductToListActivity.this, ProductsListActivity.class));
+            AddProductToListActivity.this.startActivity(new Intent(AddProductToListActivity.this, ShoppingListActivity.class));
         }
 
 
@@ -67,7 +67,7 @@ public class AddProductToListActivity extends AppCompatActivity implements OnCli
 
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(this, ProductsListActivity.class));
+        startActivity(new Intent(this, ShoppingListActivity.class));
         finish();
     }
 

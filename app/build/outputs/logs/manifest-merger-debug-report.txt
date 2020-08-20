@@ -144,7 +144,7 @@ action#com.firebase.jobdispatcher.ACTION_EXECUTE
 ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:59:17-84
 	android:name
 		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:59:25-81
-activity#com.georgeampartzidis.greenfridge.ProductsListActivity
+activity#com.georgeampartzidis.greenfridge.ShoppingListActivity
 ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:63:9-70:20
 	android:parentActivityName
 		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:66:13-55

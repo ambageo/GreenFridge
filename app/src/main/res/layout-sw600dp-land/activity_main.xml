@@ -32,14 +32,15 @@
         app:srcCompat="@drawable/ic_fridge" />
 
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <Button
         android:id="@+id/bt_add_product"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_margin="16dp"
         android:clickable="true"
+        style="@style/button"
         android:onClick="addProductActivity"
-        app:backgroundTint="@color/colorButton"
+       android:text="@string/add_product"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:srcCompat="@drawable/ic_add_white_24px" />

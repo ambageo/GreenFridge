@@ -40,8 +40,8 @@ public class ProductsListAdapter extends Adapter<ProductsListAdapter.ListViewHol
         if(!mCursor.moveToPosition(position)){
             return;
         }
-            long id = mCursor.getLong(ProductsListActivity.COLUMN_PRODUCT_ID);
-            viewHolder.productView.setText(mCursor.getString(ProductsListActivity.COLUMN_PRODUCT_NAME));
+            long id = mCursor.getLong(ShoppingListActivity.COLUMN_PRODUCT_ID);
+            viewHolder.productView.setText(mCursor.getString(ShoppingListActivity.COLUMN_PRODUCT_NAME));
             viewHolder.itemView.setTag(id);
     }
 
