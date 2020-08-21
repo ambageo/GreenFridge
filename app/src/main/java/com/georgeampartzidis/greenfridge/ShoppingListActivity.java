@@ -32,7 +32,7 @@ public class ShoppingListActivity extends AppCompatActivity implements OnClickLi
     private long id;
     private SQLiteDatabase mDb;
     private int mPosition = -1;
-    private ProductsListAdapter mProductsListAdapter;
+    private ShoppingListAdapter mShoppingListAdapter;
 
 
     public void onClick(View view) {
@@ -60,8 +60,8 @@ public class ShoppingListActivity extends AppCompatActivity implements OnClickLi
         });
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, 1, false));
-        this.mProductsListAdapter = new ProductsListAdapter(this, getAllProducts());
-        mRecyclerView.setAdapter(this.mProductsListAdapter);
+        this.mShoppingListAdapter = new ShoppingListAdapter(this, getAllProducts());
+        mRecyclerView.setAdapter(this.mShoppingListAdapter);
         new ItemTouchHelper(new SimpleCallback(0, 12) {
 
             /* renamed from: com.georgeampartzidis.greenfridge.ShoppingListActivity$2$2 */
@@ -71,7 +71,7 @@ public class ShoppingListActivity extends AppCompatActivity implements OnClickLi
 
                 public void onClick(DialogInterface dialogInterface, int i) {
                     ShoppingListActivity.this.removeProductFromList(ShoppingListActivity.this.id);
-                    ShoppingListActivity.this.mProductsListAdapter.swapCursor(ShoppingListActivity.this.getAllProducts());
+                    ShoppingListActivity.this.mShoppingListAdapter.swapCursor(ShoppingListActivity.this.getAllProducts());
                 }
             }
 
@@ -82,7 +82,7 @@ public class ShoppingListActivity extends AppCompatActivity implements OnClickLi
 
                 public void onClick(DialogInterface dialog, int i) {
                     dialog.cancel();
-                    ShoppingListActivity.this.mProductsListAdapter.swapCursor(ShoppingListActivity.this.getAllProducts());
+                    ShoppingListActivity.this.mShoppingListAdapter.swapCursor(ShoppingListActivity.this.getAllProducts());
                 }
             }
 
@@ -102,7 +102,7 @@ public class ShoppingListActivity extends AppCompatActivity implements OnClickLi
                         addProductActivity.putExtra("PUT_TO_FRIDGE", productString);
                         ShoppingListActivity.this.startActivity(addProductActivity);
                         ShoppingListActivity.this.removeProductFromList(ShoppingListActivity.this.id);
-                        ShoppingListActivity.this.mProductsListAdapter.swapCursor(ShoppingListActivity.this.getAllProducts());
+                        ShoppingListActivity.this.mShoppingListAdapter.swapCursor(ShoppingListActivity.this.getAllProducts());
                     }
                 });
                 builder.setNegativeButton((int) R.string.delete, new C03292());
@@ -118,7 +118,7 @@ public class ShoppingListActivity extends AppCompatActivity implements OnClickLi
 
     protected void onResume() {
         super.onResume();
-        this.mProductsListAdapter.swapCursor(getAllProducts());
+        this.mShoppingListAdapter.swapCursor(getAllProducts());
     }
 
     @Override

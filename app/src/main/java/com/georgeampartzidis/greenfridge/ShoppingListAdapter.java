@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class ProductsListAdapter extends Adapter<ProductsListAdapter.ListViewHolder> {
+public class ShoppingListAdapter extends Adapter<ShoppingListAdapter.ListViewHolder> {
     private final Context mContext;
     private Cursor mCursor;
 
@@ -23,7 +23,7 @@ public class ProductsListAdapter extends Adapter<ProductsListAdapter.ListViewHol
         }
     }
 
-    public ProductsListAdapter(Context context, Cursor cursor) {
+    public ShoppingListAdapter(Context context, Cursor cursor) {
         this.mContext = context;
         this.mCursor = cursor;
     }

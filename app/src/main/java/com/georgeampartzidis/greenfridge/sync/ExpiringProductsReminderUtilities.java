@@ -22,10 +22,10 @@ public class ExpiringProductsReminderUtilities {
     public static final int REMINDER_INTERVAL_SECONDS = 0;
     public static final int SYNC_FLEXTIME_SECONDS = 10;
     public static final String REMINDER_JOB_TAG = "expiring-products-reminder-tag";
-    private static boolean sInitialized;
+    private static boolean isInitialized;
 
     public static void scheduleExpiringProductsReminder(@NonNull final Context context) {
-        if (sInitialized) {
+        if (isInitialized) {
             return;
         }
         Driver driver = new GooglePlayDriver(context);
@@ -42,6 +42,6 @@ public class ExpiringProductsReminderUtilities {
                 .build();
 
         dispatcher.schedule(expiryReminderJob);
-        sInitialized = true;
+        isInitialized = true;
     }
 }

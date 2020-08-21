@@ -60,6 +60,8 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Number
                 viewHolder.dateView.setText(mContext.getResources().getString(R.string.today));
             }
             viewHolder.dateView.setTextSize(20);
+        } else {
+            viewHolder.itemView.setBackgroundColor(mContext.getResources().getColor(R.color.background));
         }
         //Set the id so that it can be accessed with itemView.getTag()
         viewHolder.itemView.setTag(id);
