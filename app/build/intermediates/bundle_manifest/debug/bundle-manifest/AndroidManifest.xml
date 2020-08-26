@@ -10,6 +10,10 @@
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera2" />
 
     <application
         android:allowBackup="true"
@@ -86,6 +90,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        <activity
+            android:name="com.georgeampartzidis.greenfridge.BarcodeScannerActivity"
+            android:label="@string/scan_product"
+            android:launchMode="singleTask"
+            android:parentActivityName="com.georgeampartzidis.greenfridge.AddProductActivity" />
+
         <!--
              Receives GooglePlay execution requests and forwards them to the
              appropriate internal service.

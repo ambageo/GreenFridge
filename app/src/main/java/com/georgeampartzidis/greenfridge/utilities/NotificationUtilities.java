@@ -31,7 +31,9 @@ public class NotificationUtilities {
     public static void clearNotifications(Context context) {
         NotificationManager notificationManager = (NotificationManager)
                 context.getSystemService(Context.NOTIFICATION_SERVICE);
-        notificationManager.cancelAll();
+        if(notificationManager != null){
+            notificationManager.cancelAll();
+        }
     }
 
     public static void RemindUser(Context context, int expiringProducts) {
@@ -47,7 +49,7 @@ public class NotificationUtilities {
 
         // Create a notification channel for Android O devices. Since Oreo notifications
         // must belong to a Notification Channel, otherwise they're not displayed
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && notificationManager != null) {
             NotificationChannel mChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID,
                     "Notification",
                     NotificationManager.IMPORTANCE_HIGH);
@@ -69,12 +71,14 @@ public class NotificationUtilities {
 
         // If the build version is greater than JELLY_BEAN and lower than OREO,
         // set the notification's priority to PRIORITY_HIGH.
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN
-                && Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
             notificationBuilder.setPriority(NotificationCompat.PRIORITY_HIGH);
         }
 
-        notificationManager.notify(NOTIFICATION_REMINDER_ID, notificationBuilder.build());
+        if (notificationManager != null) {
+            notificationManager.notify(NOTIFICATION_REMINDER_ID, notificationBuilder.build());
+        }
+
     }
 
     private static Action ignoreReminderAction(Context context) {

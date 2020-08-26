@@ -138,4 +138,10 @@ AddProductActivity extends AppCompatActivity implements DatePickerDialog.OnDateS
             });
         }
     }
+
+    public void scanProduct(View view) {
+        Intent scanIntent = new Intent(AddProductActivity.this, BarcodeScannerActivity.class);
+        startActivity(scanIntent);
+
+    }
 }

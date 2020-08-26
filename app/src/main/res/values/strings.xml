@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Green Fridge</string>
     <string name="list">My Shopping List</string>
-    <string name="empty_fridge">Looks like the fridge is empty... Why don\'t you add something?</string>
+    <string name="empty_fridge">Looks like the fridge is empty… Why don\'t you add something?</string>
     <string name="notification_title">A reminder from Green Fridge:</string>
     <string name="many_expiring_products">You have %1$d expiring/expired products!</string>
     <string name="one_expiring_product">You have an expiring/expired product!</string>
@@ -30,4 +30,8 @@
     <string name="fridge_icon_description">Logo icon of the app</string>
     <string name="add_product">Add product</string>
     <string name="inventory">Inventory</string>
+    <string name="scan_product">Or scan the barcode of the product</string>
+    <string name="add_to_fridge">Add to fridge</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="scan">Scan</string>
 </resources>

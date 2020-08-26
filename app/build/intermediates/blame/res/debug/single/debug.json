@@ -4,12 +4,12 @@
         "source": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/layout_activity_products.xml.flat",
-        "source": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/res/layout/activity_products.xml"
-    },
-    {
         "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/layout-sw600dp-land_activity_main.xml.flat",
         "source": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/res/layout-sw600dp-land/activity_main.xml"
+    },
+    {
+        "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/layout_activity_products.xml.flat",
+        "source": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/res/layout/activity_products.xml"
     },
     {
         "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
@@ -26,6 +26,10 @@
     {
         "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/layout_activity_barcode_scanner.xml.flat",
+        "source": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/res/layout/activity_barcode_scanner.xml"
     },
     {
         "merged": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_cancel.png.flat",

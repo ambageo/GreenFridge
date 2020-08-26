@@ -4,6 +4,9 @@
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-feature android:name="android.hardware.camera2"/>
 
     <application
         android:allowBackup="true"
@@ -68,14 +71,21 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".AddProductToListActivity"
+        <activity
+            android:name=".AddProductToListActivity"
+            android:label="@string/list"
             android:launchMode="singleTask"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/list">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
-            </activity>
+        </activity>
+        <activity
+            android:name=".BarcodeScannerActivity"
+            android:label="@string/scan_product"
+            android:launchMode="singleTask"
+            android:parentActivityName=".AddProductActivity" />
+
     </application>
 
 </manifest>

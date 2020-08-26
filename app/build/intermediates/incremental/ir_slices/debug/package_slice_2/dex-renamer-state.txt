@@ -1,4 +1,0 @@
-#Tue Aug 28 16:11:33 BST 2018
-base.0=/Users/george.ampartzidis/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/transforms/dexMerger/debug/2
-path.0=classes.dex
-renamed.0=classes.dex
