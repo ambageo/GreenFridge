@@ -6,6 +6,8 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
+
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -26,12 +28,16 @@ import com.georgeampartzidis.greenfridge.utilities.ProductDateUtilities;
 
 public class
 AddProductActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
-    private EditText mProductEditText;
-    private EditText mDateEditText;
+
+    private final static String LOG_TAG = AddProductActivity.class.getSimpleName();
+
+    private final static int REQUEST_CODE = 3;
+    private EditText productEditText;
+    private EditText dateEditText;
     private SQLiteDatabase mDb;
     private Toolbar mToolbar;
 
-    private final static String LOG_TAG = AddProductActivity.class.getSimpleName();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,8 +58,8 @@ AddProductActivity extends AppCompatActivity implements DatePickerDialog.OnDateS
             }
         });
 
-        mProductEditText = findViewById(R.id.product);
-        mDateEditText = findViewById(R.id.date);
+        productEditText = findViewById(R.id.product);
+        dateEditText = findViewById(R.id.date);
 
         // Get the intent
         Intent intent = this.getIntent();
@@ -65,7 +71,7 @@ AddProductActivity extends AppCompatActivity implements DatePickerDialog.OnDateS
         Bundle extras = intent.getExtras();
         if (extras != null) {
             String product = intent.getExtras().getString("PUT_TO_FRIDGE");
-            mProductEditText.setText(product);
+            productEditText.setText(product);
         }
 
         ProductsDbHelper dbHelper = new ProductsDbHelper(this);
@@ -82,23 +88,23 @@ AddProductActivity extends AppCompatActivity implements DatePickerDialog.OnDateS
         Calendar cal = new GregorianCalendar(year, month, day);
         //final DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.MEDIUM);
         final DateFormat dateFormat = new SimpleDateFormat("MMM dd, yyyy");
-        mDateEditText.setText(dateFormat.format(cal.getTime()));
+        dateEditText.setText(dateFormat.format(cal.getTime()));
     }
 
     public void addToFridge(View view) {
-        if (mProductEditText.getText().length() == 0 || mDateEditText.getText().length() == 0) {
+        if (productEditText.getText().length() == 0 || dateEditText.getText().length() == 0) {
             Toast.makeText(this, "Please fill both fields", Toast.LENGTH_SHORT).show();
             return;
         }
-        String productString = mProductEditText.getText().toString();
-        String expiryDateString = mDateEditText.getText().toString();
+        String productString = productEditText.getText().toString();
+        String expiryDateString = dateEditText.getText().toString();
         long expiryDateInMillis = ProductDateUtilities.convertDateStringToMillis(expiryDateString);
 
 
         addProduct(productString, expiryDateInMillis);
 
-        mProductEditText.getText().clear();
-        mDateEditText.getText().clear();
+        productEditText.getText().clear();
+        dateEditText.getText().clear();
     }
 
     private long addProduct(String product, long expiryDate) {
@@ -141,7 +147,20 @@ AddProductActivity extends AppCompatActivity implements DatePickerDialog.OnDateS
 
     public void scanProduct(View view) {
         Intent scanIntent = new Intent(AddProductActivity.this, BarcodeScannerActivity.class);
-        startActivity(scanIntent);
+        startActivityForResult(scanIntent, REQUEST_CODE);
+    }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                String scannedProduct = data.getStringExtra("scanned_product");
+                productEditText.setText(scannedProduct);
+            } else {
+                productEditText.setText("");
+                Toast.makeText(this, "Product not found, please fill in the fields or try scanning a different product", Toast.LENGTH_LONG).show();
+            }
+        }
     }
 }

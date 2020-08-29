@@ -1,7 +1,6 @@
 package com.georgeampartzidis.greenfridge;
 
-import android.Manifest;
-import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -87,7 +86,6 @@ public class BarcodeScannerActivity extends AppCompatActivity implements ZXingSc
         Log.d(TAG, rawResult.getText());
 
         String barCodeQuery = NetworkUtilities.buildQuery(rawResult.getText());
-        Log.d(TAG, "url is "+ barCodeQuery);
         Bundle bundle = new Bundle();
         bundle.putString(QUERY, barCodeQuery);
         startBarcodeLoader(bundle);
@@ -120,13 +118,24 @@ public class BarcodeScannerActivity extends AppCompatActivity implements ZXingSc
 
         try {
             JSONObject jsonObject = new JSONObject(result);
-            JSONObject productObject = jsonObject.optJSONObject("product");
-            productBrand = productObject.optString("brands");
-            productName = productObject.optString("product_name");
-            JSONObject imagesObject = productObject.optJSONObject("selected_images");
-            JSONObject frontImagesObject = imagesObject.optJSONObject("front");
-            productImageUrl = frontImagesObject.optString("thumb");
-            Log.d(TAG, productBrand + " " + productName + " " + productImageUrl);
+            String status = jsonObject.getString("status_verbose");
+            if (status.equalsIgnoreCase("product_found")){
+                JSONObject productObject = jsonObject.optJSONObject("product");
+                productBrand = productObject.optString("brands");
+                productName = productObject.optString("product_name");
+                JSONObject imagesObject = productObject.optJSONObject("selected_images");
+                JSONObject frontImagesObject = imagesObject.optJSONObject("front");
+                productImageUrl = frontImagesObject.optString("thumb");
+                Log.d(TAG, productBrand + " " + productName + " " + productImageUrl);
+
+                Intent intent = new Intent();
+                intent.putExtra("scanned_product", productBrand + " " + productName);
+                setResult(RESULT_OK, intent);
+            } else {
+                Intent intent = new Intent();
+                setResult(RESULT_CANCELED, intent);
+            }
+            finish();
 
         } catch (JSONException e){
             e.printStackTrace();

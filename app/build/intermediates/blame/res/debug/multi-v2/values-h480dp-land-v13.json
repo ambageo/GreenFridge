@@ -4,7 +4,7 @@
             "outputFile": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/george/.gradle/caches/transforms-2/files-2.1/d776e52f087aabc381b0b4907fc988e8/material-1.2.0/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+                    "source": "/Users/george/.gradle/caches/transforms-2/files-2.1/b5be4783eefa9eb592dc81b39bdd30c2/material-1.2.0/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

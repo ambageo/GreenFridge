@@ -32,7 +32,7 @@
 19        android:allowBackup="true"
 19-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:12:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.3.0] /Users/george/.gradle/caches/transforms-2/files-2.1/429fb715fcc7711d4ab133e350b6f531/core-1.3.0/AndroidManifest.xml:24:18-86
+20-->[androidx.core:core:1.5.0-alpha02] /Users/george/.gradle/caches/transforms-2/files-2.1/0a1778802ed9ffe41b836a67a9253163/core-1.5.0-alpha02/AndroidManifest.xml:24:18-86
 21        android:debuggable="true"
 22        android:icon="@mipmap/ic_launcher"
 22-->/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:13:9-43
@@ -177,18 +177,18 @@
 101             appropriate internal service.
 102        -->
 103        <service
-103-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/3a2e8e4cd5bfba0aca90afadf3c91210/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:32:9-39:19
+103-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/ecc6be1b5a54f830d7f883499ca37441/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:32:9-39:19
 104            android:name="com.firebase.jobdispatcher.GooglePlayReceiver"
-104-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/3a2e8e4cd5bfba0aca90afadf3c91210/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:33:13-73
+104-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/ecc6be1b5a54f830d7f883499ca37441/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:33:13-73
 105            android:exported="true"
-105-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/3a2e8e4cd5bfba0aca90afadf3c91210/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:34:13-36
+105-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/ecc6be1b5a54f830d7f883499ca37441/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:34:13-36
 106            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" >
-106-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/3a2e8e4cd5bfba0aca90afadf3c91210/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:35:13-93
+106-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/ecc6be1b5a54f830d7f883499ca37441/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:35:13-93
 107            <intent-filter>
-107-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/3a2e8e4cd5bfba0aca90afadf3c91210/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:36:13-38:29
+107-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/ecc6be1b5a54f830d7f883499ca37441/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:36:13-38:29
 108                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
-108-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/3a2e8e4cd5bfba0aca90afadf3c91210/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:37:17-87
-108-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/3a2e8e4cd5bfba0aca90afadf3c91210/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:37:25-84
+108-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/ecc6be1b5a54f830d7f883499ca37441/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:37:17-87
+108-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/george/.gradle/caches/transforms-2/files-2.1/ecc6be1b5a54f830d7f883499ca37441/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:37:25-84
 109            </intent-filter>
 110        </service>
 111    </application>
