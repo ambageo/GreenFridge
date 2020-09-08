@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.view.View;
@@ -30,22 +31,26 @@ public class AddProductToListActivity extends AppCompatActivity implements OnCli
     }
 
 
-        @Override
-        public void onClick(View view) {
-            AddProductToListActivity.this.startActivity(new Intent(AddProductToListActivity.this, ShoppingListActivity.class));
-        }
+    @Override
+    public void onClick(View view) {
+        AddProductToListActivity.this.startActivity(new Intent(AddProductToListActivity.this, ShoppingListActivity.class));
+    }
 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView((int) R.layout.activity_add_product_to_list);
-        this.toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(this.toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        this.toolbar.setNavigationOnClickListener(new OnClickListener() {
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+
+        toolbar.setNavigationOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent shoppingListActivityIntent = new Intent(AddProductToListActivity.this, ShoppingListActivity.class);
+                startActivity(shoppingListActivityIntent);
             }
         });
         this.productEditText = (EditText) findViewById(R.id.product);
@@ -54,7 +59,7 @@ public class AddProductToListActivity extends AppCompatActivity implements OnCli
 
     public void addToList(View view) {
         if (this.productEditText.getText().length() == 0) {
-            Toast.makeText(this, "Please enter a product", 0).show();
+            Toast.makeText(this, "Please enter a product", Toast.LENGTH_SHORT).show();
         }
         addProduct(this.productEditText.getText().toString());
         this.productEditText.getText().clear();
@@ -65,7 +70,7 @@ public class AddProductToListActivity extends AppCompatActivity implements OnCli
         cv.put("productName", product);
         long rowInserted = this.mDb.insert("productsList", null, cv);
         if (rowInserted != -1) {
-            Toast.makeText(this, product + " successfully added to the shopping list!", 0).show();
+            Toast.makeText(this, product + " successfully added to the shopping list!", Toast.LENGTH_SHORT).show();
         }
         return rowInserted;
     }

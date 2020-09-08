@@ -2183,6 +2183,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string add_product
 string add_to_fridge
+string add_to_list
 string alert_dialog_list_message
 string alert_dialog_message
 string alert_dialog_title
@@ -2259,6 +2260,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string product_name
 string scan
 string scan_product
 string search_menu_title
