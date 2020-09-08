@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.view.View;
@@ -15,9 +17,12 @@ import android.widget.Toast;
 import com.georgeampartzidis.greenfridge.data.ProductsDbHelper;
 
 public class AddProductToListActivity extends AppCompatActivity implements OnClickListener, DialogInterface.OnClickListener {
+
+    private final static int REQUEST_CODE = 4;
+
     private SQLiteDatabase mDb;
-    private EditText mProductEditText;
-    private Toolbar mToolbar;
+    private EditText productEditText;
+    private Toolbar toolbar;
 
     @Override
     public void onClick(DialogInterface dialogInterface, int i) {
@@ -34,25 +39,25 @@ public class AddProductToListActivity extends AppCompatActivity implements OnCli
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView((int) R.layout.activity_add_product_to_list);
-        this.mToolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(this.mToolbar);
+        this.toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(this.toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        this.mToolbar.setNavigationOnClickListener(new OnClickListener() {
+        this.toolbar.setNavigationOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
 
             }
         });
-        this.mProductEditText = (EditText) findViewById(R.id.product);
+        this.productEditText = (EditText) findViewById(R.id.product);
         this.mDb = new ProductsDbHelper(this).getWritableDatabase();
     }
 
     public void addToList(View view) {
-        if (this.mProductEditText.getText().length() == 0) {
+        if (this.productEditText.getText().length() == 0) {
             Toast.makeText(this, "Please enter a product", 0).show();
         }
-        addProduct(this.mProductEditText.getText().toString());
-        this.mProductEditText.getText().clear();
+        addProduct(this.productEditText.getText().toString());
+        this.productEditText.getText().clear();
     }
 
     private long addProduct(String product) {
@@ -74,12 +79,31 @@ public class AddProductToListActivity extends AppCompatActivity implements OnCli
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         if (newConfig.orientation == 2) {
-            this.mToolbar.setNavigationOnClickListener(new OnClickListener() {
+            this.toolbar.setNavigationOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
                 }
             });
+        }
+    }
+
+    public void scanProduct(View view) {
+        Intent scanIntent = new Intent(AddProductToListActivity.this, BarcodeScannerActivity.class);
+        startActivityForResult(scanIntent, REQUEST_CODE);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                String scannedProduct = data.getStringExtra("scanned_product");
+                productEditText.setText(scannedProduct);
+            } else {
+                productEditText.setText("");
+                Toast.makeText(this, "Product not found, please fill in the fields or try scanning a different product", Toast.LENGTH_LONG).show();
+            }
         }
     }
 }

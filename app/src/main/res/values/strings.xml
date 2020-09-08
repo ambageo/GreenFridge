@@ -34,4 +34,6 @@
     <string name="add_to_fridge">Add to fridge</string>
     <string name="expiry_date">Expiry Date</string>
     <string name="scan">Scan</string>
+    <string name="product_name">Product name</string>
+    <string name="add_to_list">Add to list</string>
 </resources>

@@ -9,7 +9,7 @@ import java.net.URL;
 
 public class NetworkUtilities {
 
-    private static final String BASE_URL = "https://world.openfoodfacts.org/api/v0/product/.json";
+    private static final String BASE_URL = "https://world.openfoodfacts.org/api/v0/product/";
     private static final String JSON_URL = ".json";
 
     public static String buildQuery (String barcode){

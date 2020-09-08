@@ -29,7 +29,6 @@
         tools:text="Lactose Free Milk Soy Sauce"
         android:ellipsize="end"
         android:maxEms="25"
-        android:maxLines="1"
-        android:paddingRight="124dp"/>
+        android:maxLines="1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,7 +13,7 @@
     <EditText
         android:id="@id/product"
         style="@style/editText"
-        android:hint="Product name"
+        android:hint="@string/product_name"
         android:inputType="text"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -23,14 +23,36 @@
     <com.google.android.material.button.MaterialButton
         android:id="@id/add_button"
         style="@style/button"
-        android:layout_marginTop="8.0dip"
-        android:layout_marginBottom="16.0dip"
+        android:layout_margin="8dp"
         android:onClick="addToList"
-        android:text="Add to list"
+        android:text="@string/add_to_list"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/product" />
+
+    <TextView
+        android:id="@+id/scan_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/add_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="24dp"
+        android:text="@string/scan_product"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/scan_button"
+        style="@style/button"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="scanProduct"
+        android:text="@string/scan"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scan_textview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
