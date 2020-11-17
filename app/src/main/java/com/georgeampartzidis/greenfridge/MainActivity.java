@@ -20,6 +20,9 @@ import com.georgeampartzidis.greenfridge.data.ProductsContract;
 import com.georgeampartzidis.greenfridge.data.ProductsDbHelper;
 import com.georgeampartzidis.greenfridge.sync.ExpiringProductsReminderUtilities;
 import com.georgeampartzidis.greenfridge.utilities.ProductDateUtilities;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 import java.util.Locale;
 
@@ -42,6 +45,13 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         setContentView(R.layout.activity_main);
         androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar);
         this.setSupportActionBar(toolbar);
+
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+
+            }
+        });
 
         deviceLocale = Locale.getDefault().getLanguage();
 
