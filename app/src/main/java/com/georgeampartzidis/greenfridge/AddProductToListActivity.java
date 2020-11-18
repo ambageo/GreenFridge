@@ -17,6 +17,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import com.georgeampartzidis.greenfridge.data.ProductsDbHelper;
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
@@ -70,6 +71,12 @@ public class AddProductToListActivity extends AppCompatActivity implements OnCli
         });
 
         adView = findViewById(R.id.adView);
+        adView.setAdSize(AdSize.BANNER);
+        if(BuildConfig.DEBUG){
+            adView.setAdUnitId(String.valueOf(R.string.test_ad_unit_id));
+        } else {
+            adView.setAdUnitId(String.valueOf(R.string.ad_unit_id));
+        }
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
     }
