@@ -80,6 +80,9 @@ attr actionProviderClass
 attr actionTextColorAlpha
 attr actionViewClass
 attr activityChooserViewStyle
+attr adSize
+attr adSizes
+attr adUnitId
 attr alertDialogButtonGroupStyle
 attr alertDialogCenterButtons
 attr alertDialogStyle
@@ -897,7 +900,10 @@ attr yearTodayStyle
 bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
+bool enable_system_alarm_service_default
+bool enable_system_job_service_default
 bool mtrl_btn_textappearance_all_caps
+bool workmanager_test_configuration
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -938,6 +944,10 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color browser_actions_bg_grey
+color browser_actions_divider_color
+color browser_actions_text_color
+color browser_actions_title_color
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -1190,6 +1200,8 @@ dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen appcompat_dialog_background_inset
+dimen browser_actions_context_menu_max_width
+dimen browser_actions_context_menu_min_padding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -1672,6 +1684,7 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id adView
 id add
 id add_button
 id alertTitle
@@ -1693,6 +1706,11 @@ id beginning
 id blocking
 id bottom
 id bounce
+id browser_actions_header_text
+id browser_actions_menu_item_icon
+id browser_actions_menu_item_text
+id browser_actions_menu_items
+id browser_actions_menu_view
 id bt_add_product
 id bt_open_fridge
 id bt_open_shopping_list
@@ -1987,6 +2005,7 @@ id tv_expiry_date
 id tv_fridge_content
 id tv_icon_link
 id tv_product
+id tv_product_data_credits
 id tv_translation_credits
 id unchecked
 id uniform
@@ -2008,6 +2027,7 @@ integer cancel_button_image_alpha
 integer config_tooltipAnimTime
 integer design_snackbar_text_max_lines
 integer design_tab_indicator_anim_duration_ms
+integer google_play_services_version
 integer hide_password_duration
 integer mtrl_badge_max_character_count
 integer mtrl_btn_anim_delay_ms
@@ -2069,6 +2089,8 @@ layout activity_barcode_scanner
 layout activity_main
 layout activity_products
 layout activity_shopping_list
+layout browser_actions_context_menu_page
+layout browser_actions_context_menu_row
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2181,6 +2203,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string ad_unit_id
 string add_product
 string add_to_fridge
 string add_to_list
@@ -2197,6 +2220,7 @@ string character_counter_pattern
 string check_list
 string chip_text
 string clear_text_end_icon_content_description
+string common_google_play_services_unknown_issue
 string credit_fridge_icon
 string delete
 string delete_and_add_in_fridge
@@ -2253,6 +2277,13 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string notification_title
+string offline_notification_text
+string offline_notification_title
+string offline_opt_in_confirm
+string offline_opt_in_confirmation
+string offline_opt_in_decline
+string offline_opt_in_message
+string offline_opt_in_title
 string one_expiring_product
 string open_fridge
 string password_toggle_content_description
@@ -2260,11 +2291,20 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string product_data_credits
 string product_name
+string s1
+string s2
+string s3
+string s4
+string s5
+string s6
+string s7
 string scan
 string scan_product
 string search_menu_title
 string status_bar_notification_info_overflow
+string test_ad_unit_id
 string today
 string translation_credits
 style ActionBar_GreenFridge
@@ -2687,6 +2727,7 @@ style Theme_Design_Light
 style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
+style Theme_IAPTheme
 style Theme_MaterialComponents
 style Theme_MaterialComponents_BottomSheetDialog
 style Theme_MaterialComponents_Bridge
@@ -2978,6 +3019,7 @@ styleable ActionMenuItemView android_minWidth
 styleable ActionMenuView
 styleable ActionMode background backgroundSplit closeItemLayout height subtitleTextStyle titleTextStyle
 styleable ActivityChooserView expandActivityOverflowButtonDrawable initialActivityCount
+styleable AdsAttrs adSize adSizes adUnitId
 styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listItemLayout listLayout multiChoiceItemLayout showTitle singleChoiceItemLayout
 styleable AnimatedStateListDrawableCompat android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable AnimatedStateListDrawableItem android_id android_drawable

@@ -16,6 +16,8 @@
         <a href="https://www.flaticon.com/">FLATICON</a></string>
     <string name="translation_credits">All translations provided by
         <a href="https://www.linkedin.com/in/stella-kotzampasaki/">Stella Kotzampasaki</a></string>
+    <string name="product_data_credits">Data for food products available from
+        <a href="https://world.openfoodfacts.org/data">Open Food Facts database</a></string>
 
     <!-- Strings used for the Alert Dialogs-->
     <string name="alert_dialog_title">Delete Product</string>
@@ -36,4 +38,7 @@
     <string name="scan">Scan</string>
     <string name="product_name">Product name</string>
     <string name="add_to_list">Add to list</string>
+
+    <string name="test_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_unit_id">ca-app-pub-6270104843193223/9649025660</string>
 </resources>

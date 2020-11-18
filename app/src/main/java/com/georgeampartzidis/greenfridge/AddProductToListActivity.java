@@ -16,6 +16,11 @@ import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.Toast;
 import com.georgeampartzidis.greenfridge.data.ProductsDbHelper;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 public class AddProductToListActivity extends AppCompatActivity implements OnClickListener, DialogInterface.OnClickListener {
 
@@ -24,6 +29,7 @@ public class AddProductToListActivity extends AppCompatActivity implements OnCli
     private SQLiteDatabase mDb;
     private EditText productEditText;
     private Toolbar toolbar;
+    private AdView adView;
 
     @Override
     public void onClick(DialogInterface dialogInterface, int i) {
@@ -55,6 +61,17 @@ public class AddProductToListActivity extends AppCompatActivity implements OnCli
         });
         this.productEditText = (EditText) findViewById(R.id.product);
         this.mDb = new ProductsDbHelper(this).getWritableDatabase();
+
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+
+            }
+        });
+
+        adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
     }
 
     public void addToList(View view) {

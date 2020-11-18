@@ -4,7 +4,7 @@
             "outputFile": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/george/.gradle/caches/transforms-2/files-2.1/898f501884f941a6a0b1e7ae8013590d/jetified-core-1.9.13/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/Users/george/.gradle/caches/transforms-2/files-2.1/7cd5b4edd6220c9a9bb0080825f6c0e2/jetified-core-1.9.13/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/george/.gradle/caches/transforms-2/files-2.1/035e79feac643ff23f2c9730c699e50a/appcompat-1.2.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/Users/george/.gradle/caches/transforms-2/files-2.1/284a2a218f7f6f43d29c2ab8e18ab1ed/appcompat-1.2.0/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

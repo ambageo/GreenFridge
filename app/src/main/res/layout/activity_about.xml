@@ -47,4 +47,28 @@
         app:layout_constraintEnd_toEndOf="@id/tv_icon_link"
         app:layout_constraintTop_toBottomOf="@id/tv_icon_link"/>
 
+    <TextView
+        android:id="@+id/tv_product_data_credits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:text="@string/product_data_credits"
+        app:layout_constraintStart_toStartOf="@id/tv_icon_link"
+        app:layout_constraintEnd_toEndOf="@id/tv_icon_link"
+        app:layout_constraintTop_toBottomOf="@id/tv_translation_credits"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal='true'
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_unit_id"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

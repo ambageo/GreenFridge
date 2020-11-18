@@ -4,7 +4,7 @@
             "outputFile": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml",
             "map": [
                 {
-                    "source": "/Users/george/.gradle/caches/transforms-2/files-2.1/0a1778802ed9ffe41b836a67a9253163/core-1.5.0-alpha02/res/values-pt/values-pt.xml",
+                    "source": "/Users/george/.gradle/caches/transforms-2/files-2.1/18904eda3a10785fe1019527b8c4ad3e/core-1.5.0-alpha05/res/values-pt/values-pt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/george/.gradle/caches/transforms-2/files-2.1/035e79feac643ff23f2c9730c699e50a/appcompat-1.2.0/res/values-pt/values-pt.xml",
+                    "source": "/Users/george/.gradle/caches/transforms-2/files-2.1/284a2a218f7f6f43d29c2ab8e18ab1ed/appcompat-1.2.0/res/values-pt/values-pt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -25,6 +25,11 @@ import java.util.GregorianCalendar;
 import com.georgeampartzidis.greenfridge.data.ProductsContract.ProductsEntry;
 import com.georgeampartzidis.greenfridge.data.ProductsDbHelper;
 import com.georgeampartzidis.greenfridge.utilities.ProductDateUtilities;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 public class
 AddProductActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
@@ -36,8 +41,7 @@ AddProductActivity extends AppCompatActivity implements DatePickerDialog.OnDateS
     private EditText dateEditText;
     private SQLiteDatabase mDb;
     private Toolbar mToolbar;
-
-
+    private AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +63,17 @@ AddProductActivity extends AppCompatActivity implements DatePickerDialog.OnDateS
                 startActivity(addProductIntent);
             }
         });
+
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+
+            }
+        });
+
+        adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         productEditText = findViewById(R.id.product);
         dateEditText = findViewById(R.id.date);

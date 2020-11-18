@@ -4,7 +4,7 @@
             "outputFile": "/Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "/Users/george/.gradle/caches/transforms-2/files-2.1/b5be4783eefa9eb592dc81b39bdd30c2/material-1.2.0/res/values-small-v4/values-small-v4.xml",
+                    "source": "/Users/george/.gradle/caches/transforms-2/files-2.1/546bcf2f8ca90f59aed6313fe9d4e19b/material-1.2.0/res/values-small-v4/values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

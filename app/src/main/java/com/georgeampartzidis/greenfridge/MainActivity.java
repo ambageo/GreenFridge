@@ -20,6 +20,8 @@ import com.georgeampartzidis.greenfridge.data.ProductsContract;
 import com.georgeampartzidis.greenfridge.data.ProductsDbHelper;
 import com.georgeampartzidis.greenfridge.sync.ExpiringProductsReminderUtilities;
 import com.georgeampartzidis.greenfridge.utilities.ProductDateUtilities;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     private TextView mFridgeContentTextView;
     private static long todayDate;
     private static String deviceLocale;
+    private AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +55,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
             }
         });
+
+        adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         deviceLocale = Locale.getDefault().getLanguage();
 
