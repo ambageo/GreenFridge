@@ -1,34 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cardview_light_background">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        app:title="@string/list"
-        app:titleTextColor="@android:color/white"
-        style="@style/toolbar" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview_products"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipToPadding="false"
-        android:paddingBottom="8dp"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:paddingTop="?attr/actionBarSize" />
+        android:paddingBottom="64dp">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/bt_add_product"
-        style="@style/fab_button"
-        android:layout_height="56dp"
-        android:layout_gravity="bottom|right"
-        android:onClick="addToShoppingList"
-        app:backgroundTint="@color/colorButton"
-        android:elevation="4dp"
-        app:srcCompat="@drawable/ic_add_white_24px" />
-</FrameLayout>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="@string/list"
+            app:titleTextColor="@android:color/white"
+            style="@style/toolbar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_products"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="?attr/actionBarSize" />
+
+        <TextView
+            android:id="@+id/empty_list_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_shopping_list"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:background="@color/background"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:elevation="8dp"
+            android:layout_gravity="center"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/bt_add_product"
+            style="@style/fab_button"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|right"
+            android:onClick="addToShoppingList"
+            app:backgroundTint="@color/colorButton"
+            android:elevation="4dp"
+            app:srcCompat="@drawable/ic_add_white_24px" />
+    </FrameLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal='true'
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_unit_id"/>
+
+</RelativeLayout>

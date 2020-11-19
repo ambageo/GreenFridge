@@ -34,12 +34,6 @@ public class AboutActivity extends AppCompatActivity {
         });
 
         adView = findViewById(R.id.adView);
-        adView.setAdSize(AdSize.BANNER);
-        if(BuildConfig.DEBUG){
-            adView.setAdUnitId(String.valueOf(R.string.test_ad_unit_id));
-        } else {
-            adView.setAdUnitId(String.valueOf(R.string.ad_unit_id));
-        }
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
 

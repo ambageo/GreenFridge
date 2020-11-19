@@ -2,6 +2,7 @@
     <string name="app_name">Green Fridge</string>
     <string name="list">My Shopping List</string>
     <string name="empty_fridge">Looks like the fridge is empty… Why don\'t you add something?</string>
+    <string name="empty_shopping_list">Your shopping list is empty</string>
     <string name="notification_title">A reminder from Green Fridge:</string>
     <string name="many_expiring_products">You have %1$d expiring/expired products!</string>
     <string name="one_expiring_product">You have an expiring/expired product!</string>
@@ -39,6 +40,9 @@
     <string name="product_name">Product name</string>
     <string name="add_to_list">Add to list</string>
 
-    <string name="test_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="ad_unit_id">ca-app-pub-6270104843193223/9649025660</string>
+    <!-- ad unit id used for the release REMEMBER TO CHANGE TO THIS ONE WHEN RELEASING -->
+    <!-- <string name="ad_unit_id">ca-app-pub-6270104843193223/9649025660</string> -->
+
+    <!-- ad unit id used for testing (debug) -->
+    <string name="ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
 </resources>

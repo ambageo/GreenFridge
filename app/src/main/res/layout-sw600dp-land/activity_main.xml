@@ -108,6 +108,8 @@
         android:layout_centerHorizontal='true'
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_unit_id"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

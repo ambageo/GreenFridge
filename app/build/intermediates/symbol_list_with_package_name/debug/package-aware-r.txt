@@ -1774,6 +1774,7 @@ id easeIn
 id easeInOut
 id easeOut
 id edit_query
+id empty_list_textview
 id end
 id end_padder
 id enterAlways
@@ -2226,6 +2227,7 @@ string delete
 string delete_and_add_in_fridge
 string delete_and_add_in_list
 string empty_fridge
+string empty_shopping_list
 string error_icon_content_description
 string expired_string
 string expiry_date
@@ -2304,7 +2306,6 @@ string scan
 string scan_product
 string search_menu_title
 string status_bar_notification_info_overflow
-string test_ad_unit_id
 string today
 string translation_credits
 style ActionBar_GreenFridge

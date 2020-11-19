@@ -22,6 +22,11 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 import com.georgeampartzidis.greenfridge.data.ProductsDbHelper;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 public class ShoppingListActivity extends AppCompatActivity implements OnClickListener{
     public static final int COLUMN_PRODUCT_ID = 0;
@@ -33,6 +38,8 @@ public class ShoppingListActivity extends AppCompatActivity implements OnClickLi
     private SQLiteDatabase mDb;
     private int mPosition = -1;
     private ShoppingListAdapter mShoppingListAdapter;
+    private TextView emptyShoppingListTextView;
+    private AdView adView;
 
 
     public void onClick(View view) {
@@ -41,7 +48,20 @@ public class ShoppingListActivity extends AppCompatActivity implements OnClickLi
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView((int) R.layout.activity_shopping_list);
+        setContentView(R.layout.activity_shopping_list);
+
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+
+            }
+        });
+
+        adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
+        emptyShoppingListTextView = findViewById(R.id.empty_list_textview);
         RecyclerView mRecyclerView = findViewById(R.id.recyclerview_products);
         this.mDb = new ProductsDbHelper(this).getWritableDatabase();
         Toolbar mToolbar = findViewById(R.id.toolbar);
@@ -62,6 +82,8 @@ public class ShoppingListActivity extends AppCompatActivity implements OnClickLi
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, 1, false));
         this.mShoppingListAdapter = new ShoppingListAdapter(this, getAllProducts());
         mRecyclerView.setAdapter(this.mShoppingListAdapter);
+        checkToShowEmptyMessage();
+
         new ItemTouchHelper(new SimpleCallback(0, 12) {
 
             /* renamed from: com.georgeampartzidis.greenfridge.ShoppingListActivity$2$2 */
@@ -72,6 +94,7 @@ public class ShoppingListActivity extends AppCompatActivity implements OnClickLi
                 public void onClick(DialogInterface dialogInterface, int i) {
                     ShoppingListActivity.this.removeProductFromList(ShoppingListActivity.this.id);
                     ShoppingListActivity.this.mShoppingListAdapter.swapCursor(ShoppingListActivity.this.getAllProducts());
+                    checkToShowEmptyMessage();
                 }
             }
 
@@ -83,6 +106,7 @@ public class ShoppingListActivity extends AppCompatActivity implements OnClickLi
                 public void onClick(DialogInterface dialog, int i) {
                     dialog.cancel();
                     ShoppingListActivity.this.mShoppingListAdapter.swapCursor(ShoppingListActivity.this.getAllProducts());
+                    checkToShowEmptyMessage();
                 }
             }
 
@@ -102,7 +126,9 @@ public class ShoppingListActivity extends AppCompatActivity implements OnClickLi
                         addProductActivity.putExtra("PUT_TO_FRIDGE", productString);
                         ShoppingListActivity.this.startActivity(addProductActivity);
                         ShoppingListActivity.this.removeProductFromList(ShoppingListActivity.this.id);
+                        checkToShowEmptyMessage();
                         ShoppingListActivity.this.mShoppingListAdapter.swapCursor(ShoppingListActivity.this.getAllProducts());
+                        checkToShowEmptyMessage();
                     }
                 });
                 builder.setNegativeButton((int) R.string.delete, new C03292());
@@ -119,6 +145,7 @@ public class ShoppingListActivity extends AppCompatActivity implements OnClickLi
     protected void onResume() {
         super.onResume();
         this.mShoppingListAdapter.swapCursor(getAllProducts());
+        checkToShowEmptyMessage();
     }
 
     @Override
@@ -144,5 +171,13 @@ public class ShoppingListActivity extends AppCompatActivity implements OnClickLi
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         return displayMetrics.widthPixels;
+    }
+
+    private void checkToShowEmptyMessage(){
+        if (getAllProducts().getCount()==0){
+            emptyShoppingListTextView.setVisibility(View.VISIBLE);
+        } else {
+            emptyShoppingListTextView.setVisibility(View.INVISIBLE);
+        }
     }
 }

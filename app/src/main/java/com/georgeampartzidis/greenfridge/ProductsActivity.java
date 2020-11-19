@@ -6,6 +6,12 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import androidx.loader.app.LoaderManager;
 import androidx.loader.content.CursorLoader;
@@ -55,12 +61,24 @@ public class ProductsActivity extends AppCompatActivity implements LoaderManager
     private long id;
     private Toolbar mToolbar;
     private TextView mEmptyFridgeTextView;
+    private AdView adView;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_products);
+
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+
+            }
+        });
+
+        adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         ProductsDbHelper dbHelper = new ProductsDbHelper(this);
         mDb = dbHelper.getWritableDatabase();
@@ -96,6 +114,7 @@ public class ProductsActivity extends AppCompatActivity implements LoaderManager
 
         mRecyclerView.setLayoutManager(layoutManager);
         Cursor cursor = getAllProducts();
+        checkToShowEmptyMessage();
         mProductAdapter = new ProductsAdapter(this, cursor);
         mRecyclerView.setAdapter(mProductAdapter);
 
@@ -138,6 +157,7 @@ public class ProductsActivity extends AppCompatActivity implements LoaderManager
                                 // don't want it to be reused because it may be used for a non- expired program
                                 viewHolder.setIsRecyclable(false);
                                 mProductAdapter.swapCursor(getAllProducts());
+                                checkToShowEmptyMessage();
                             }
                         });
 
@@ -150,6 +170,7 @@ public class ProductsActivity extends AppCompatActivity implements LoaderManager
                         removeProduct(id);
                         viewHolder.setIsRecyclable(false);
                         mProductAdapter.swapCursor(getAllProducts());
+                        checkToShowEmptyMessage();
                     }
                 });
 
@@ -232,14 +253,12 @@ public class ProductsActivity extends AppCompatActivity implements LoaderManager
 
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
-
-        if(data!= null){
-            mEmptyFridgeTextView.setVisibility(View.INVISIBLE);
-        }
         mProductAdapter.swapCursor(data);
         if (mPosition == RecyclerView.NO_POSITION)
             mPosition = 0;
         mRecyclerView.smoothScrollToPosition(mPosition);
+
+        checkToShowEmptyMessage();
     }
 
     @Override
@@ -270,6 +289,7 @@ public class ProductsActivity extends AppCompatActivity implements LoaderManager
     protected void onResume() {
         super.onResume();
         mProductAdapter.swapCursor(getAllProducts());
+       checkToShowEmptyMessage();
     }
 
     @Override
@@ -321,5 +341,13 @@ public class ProductsActivity extends AppCompatActivity implements LoaderManager
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         int width = displayMetrics.widthPixels;
         return width;
+    }
+
+    private void checkToShowEmptyMessage(){
+        if (getAllProducts().getCount()==0){
+            mEmptyFridgeTextView.setVisibility(View.VISIBLE);
+        } else {
+            mEmptyFridgeTextView.setVisibility(View.INVISIBLE);
+        }
     }
 }
