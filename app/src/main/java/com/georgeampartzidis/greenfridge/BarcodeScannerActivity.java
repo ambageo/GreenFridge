@@ -16,6 +16,11 @@ import androidx.loader.app.LoaderManager;
 import androidx.loader.content.Loader;
 
 import com.georgeampartzidis.greenfridge.utilities.NetworkUtilities;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.zxing.Result;
 
 import org.json.JSONException;
@@ -39,11 +44,23 @@ public class BarcodeScannerActivity extends AppCompatActivity implements ZXingSc
     private String productImageUrl = "";
 
     private ZXingScannerView scannerView;
+    private AdView adView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_barcode_scanner);
+
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+
+            }
+        });
+
+        adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         ViewGroup contentFrame = findViewById(R.id.content_frame);
         scannerView = new ZXingScannerView(this);

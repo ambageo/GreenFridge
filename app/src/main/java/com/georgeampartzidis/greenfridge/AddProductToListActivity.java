@@ -46,8 +46,9 @@ public class AddProductToListActivity extends AppCompatActivity implements OnCli
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView((int) R.layout.activity_add_product_to_list);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setContentView(R.layout.activity_add_product_to_list);
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
@@ -95,7 +96,7 @@ public class AddProductToListActivity extends AppCompatActivity implements OnCli
 
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(this, ShoppingListActivity.class));
+        startActivity(new Intent(AddProductToListActivity.this, ShoppingListActivity.class));
         finish();
     }
 
