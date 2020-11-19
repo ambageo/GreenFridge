@@ -12,6 +12,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -43,11 +44,16 @@ AddProductActivity extends AppCompatActivity implements DatePickerDialog.OnDateS
     private SQLiteDatabase mDb;
     private Toolbar mToolbar;
     private AdView adView;
+    private String originActivity = "";
+    private Intent productsListIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_product);
+
+        productEditText = findViewById(R.id.product);
+        dateEditText = findViewById(R.id.date);
 
         // Button functionality of the toolbar- when pressed it launches ProductActivity
         mToolbar = findViewById(R.id.toolbar);
@@ -56,12 +62,34 @@ AddProductActivity extends AppCompatActivity implements DatePickerDialog.OnDateS
         if(actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+
+        // Get the intent
+        Intent intent = this.getIntent();
+        /**
+         * Get the intent's extras. If there are no extras, it means that the activity is launched
+         * from the Main Activity. If there are extras, it is launched from the ShoppingList Activity,
+         * so get the product string and set it to the TextView
+         */
+        Bundle extras = intent.getExtras();
+        if (extras != null) {
+            String product = intent.getExtras().getString("PUT_TO_FRIDGE");
+            originActivity = intent.getExtras().getString("FROM_ACTIVITY");
+            Log.d("ggg", "product received: "+ product + " from activity: "+ originActivity);
+            productEditText.setText(product);
+        }
+
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent addProductIntent = new Intent(AddProductActivity.this,
-                        ProductsActivity.class);
-                startActivity(addProductIntent);
+                if (originActivity.equals("ShoppingListActivity")){
+                    productsListIntent = new Intent(AddProductActivity.this,
+                            ShoppingListActivity.class);
+                } else {
+                    productsListIntent = new Intent(AddProductActivity.this,
+                            ProductsActivity.class);
+                }
+
+                startActivity(productsListIntent);
             }
         });
 
@@ -75,22 +103,6 @@ AddProductActivity extends AppCompatActivity implements DatePickerDialog.OnDateS
         adView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
-
-        productEditText = findViewById(R.id.product);
-        dateEditText = findViewById(R.id.date);
-
-        // Get the intent
-        Intent intent = this.getIntent();
-        /**
-         * Get the intent's extras. If there are no extras, it means that the activity is launched
-         * from the Main Activity. If there are extras, it is launched from the ProductsList Activity,
-         * so get the product string and set it to the TextView
-         */
-        Bundle extras = intent.getExtras();
-        if (extras != null) {
-            String product = intent.getExtras().getString("PUT_TO_FRIDGE");
-            productEditText.setText(product);
-        }
 
         ProductsDbHelper dbHelper = new ProductsDbHelper(this);
         mDb = dbHelper.getWritableDatabase();

@@ -17,6 +17,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.ItemTouchHelper.SimpleCallback;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -63,6 +64,7 @@ public class ShoppingListActivity extends AppCompatActivity implements OnClickLi
 
         emptyShoppingListTextView = findViewById(R.id.empty_list_textview);
         RecyclerView mRecyclerView = findViewById(R.id.recyclerview_products);
+
         this.mDb = new ProductsDbHelper(this).getWritableDatabase();
         Toolbar mToolbar = findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
@@ -124,6 +126,7 @@ public class ShoppingListActivity extends AppCompatActivity implements OnClickLi
                         Intent addProductActivity = new Intent(ShoppingListActivity.this, AddProductActivity.class);
                         addProductActivity.putExtra("FROM_ACTIVITY", ShoppingListActivity.LOG_TAG);
                         addProductActivity.putExtra("PUT_TO_FRIDGE", productString);
+                        Log.d("ggg", "FROM ACTIVITY: "+ ShoppingListActivity.LOG_TAG + ", PRODUCT: " + productString );
                         ShoppingListActivity.this.startActivity(addProductActivity);
                         ShoppingListActivity.this.removeProductFromList(ShoppingListActivity.this.id);
                         checkToShowEmptyMessage();
