@@ -5,11 +5,14 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.loader.app.LoaderManager;
@@ -39,12 +42,11 @@ public class BarcodeScannerActivity extends AppCompatActivity implements ZXingSc
     private static final int BARCODE_LOADER = 11;
     private static final String QUERY = "query_string";
 
-    private String productName = "";
-    private String productBrand = "";
-    private String productImageUrl = "";
+    private String originActivity = "";
 
     private ZXingScannerView scannerView;
-    private AdView adView;
+
+    private Intent addProductIntent;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -58,9 +60,39 @@ public class BarcodeScannerActivity extends AppCompatActivity implements ZXingSc
             }
         });
 
-        adView = findViewById(R.id.adView);
+        AdView adView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+
+        Intent intent = this.getIntent();
+        Bundle extras = intent.getExtras();
+        if (extras != null){
+            originActivity = intent.getExtras().getString("FROM_ACTIVITY");
+            Log.d("ggg", " Barcode scanner from activity: "+ originActivity);
+        }
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(originActivity.equals("AddProductToListActivity")){
+                    addProductIntent= new Intent(BarcodeScannerActivity.this, AddProductToListActivity.class);
+                    startActivity(addProductIntent);
+                } else {
+                    addProductIntent= new Intent(BarcodeScannerActivity.this, AddProductActivity.class);
+                    startActivity(addProductIntent);
+                }
+
+            }
+        });
+
+
 
         ViewGroup contentFrame = findViewById(R.id.content_frame);
         scannerView = new ZXingScannerView(this);
@@ -138,11 +170,11 @@ public class BarcodeScannerActivity extends AppCompatActivity implements ZXingSc
             String status = jsonObject.getString("status_verbose");
             if (status.equalsIgnoreCase("product_found") || status.equalsIgnoreCase("product found")){
                 JSONObject productObject = jsonObject.optJSONObject("product");
-                productBrand = productObject.optString("brands");
-                productName = productObject.optString("product_name");
+                String productBrand = productObject.optString("brands");
+                String productName = productObject.optString("product_name");
                 JSONObject imagesObject = productObject.optJSONObject("selected_images");
                 JSONObject frontImagesObject = imagesObject.optJSONObject("front");
-                productImageUrl = frontImagesObject.optString("thumb");
+                String productImageUrl = frontImagesObject.optString("thumb");
                 Log.d(TAG, productBrand + " " + productName + " " + productImageUrl);
 
                 Intent intent = new Intent();

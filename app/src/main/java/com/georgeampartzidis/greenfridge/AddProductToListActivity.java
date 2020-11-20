@@ -25,6 +25,8 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 
 public class AddProductToListActivity extends AppCompatActivity implements OnClickListener, DialogInterface.OnClickListener {
 
+    private final static String LOG_TAG = AddProductToListActivity.class.getSimpleName();
+
     private final static int REQUEST_CODE = 4;
 
     private SQLiteDatabase mDb;
@@ -114,6 +116,7 @@ public class AddProductToListActivity extends AppCompatActivity implements OnCli
 
     public void scanProduct(View view) {
         Intent scanIntent = new Intent(AddProductToListActivity.this, BarcodeScannerActivity.class);
+        scanIntent.putExtra("FROM_ACTIVITY", LOG_TAG);
         startActivityForResult(scanIntent, REQUEST_CODE);
     }
 
