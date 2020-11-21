@@ -81,6 +81,7 @@ public class AddProductToListActivity extends AppCompatActivity implements OnCli
     public void addToList(View view) {
         if (this.productEditText.getText().length() == 0) {
             Toast.makeText(this, "Please enter a product", Toast.LENGTH_SHORT).show();
+            return;
         }
         addProduct(this.productEditText.getText().toString());
         this.productEditText.getText().clear();
