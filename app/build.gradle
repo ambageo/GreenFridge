@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
 
 android {
     compileSdkVersion 29
@@ -9,7 +10,7 @@ android {
         applicationId "com.georgeampartzidis.greenfridge"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 7
+        versionCode 9
         versionName "1.2"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
@@ -24,6 +25,7 @@ android {
 dependencies {
     implementation platform('com.google.firebase:firebase-bom:26.1.0')
     implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
 
     implementation 'com.google.android.gms:play-services-ads:19.5.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'

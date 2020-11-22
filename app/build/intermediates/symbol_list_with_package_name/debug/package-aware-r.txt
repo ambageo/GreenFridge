@@ -2221,6 +2221,7 @@ string character_counter_pattern
 string check_list
 string chip_text
 string clear_text_end_icon_content_description
+string com_crashlytics_android_build_id
 string common_google_play_services_unknown_issue
 string credit_fridge_icon
 string default_web_client_id
