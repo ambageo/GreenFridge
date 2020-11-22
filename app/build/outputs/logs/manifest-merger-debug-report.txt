@@ -128,10 +128,10 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] /U
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/27bbfcb47a7749f22f694eb8dabfeb2b/jetified-play-services-measurement-sdk-api-18.0.0/AndroidManifest.xml:23:5-67
 	android:name
 		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:8:22-64
-uses-feature#android.hardware.camera2
-ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:10:5-61
+uses-permission#android.hardware.camera2
+ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:10:5-64
 	android:name
-		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:10:19-58
+		ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:10:22-61
 application
 ADDED from /Users/george/Dropbox/AndroidStudioProjects/GreenFridge/app/src/main/AndroidManifest.xml:12:5-91:19
 MERGED from [com.google.firebase:firebase-analytics:18.0.0] /Users/george/.gradle/caches/transforms-2/files-2.1/883d97b9e5738d1338d807654a28649a/jetified-firebase-analytics-18.0.0/AndroidManifest.xml:7:5-20
