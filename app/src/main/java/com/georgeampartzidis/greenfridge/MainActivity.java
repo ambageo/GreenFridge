@@ -25,6 +25,8 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
+import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
 
 import java.util.Locale;
 
@@ -39,8 +41,6 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     private Cursor mCursor;
     private TextView mFridgeContentTextView;
     private static long todayDate;
-    private static String deviceLocale;
-    private AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,11 +56,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             }
         });
 
-        adView = findViewById(R.id.adView);
+        AdView adView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
-
-        deviceLocale = Locale.getDefault().getLanguage();
 
         ProductsDbHelper dbHelper = new ProductsDbHelper(this);
         mDb = dbHelper.getWritableDatabase();
