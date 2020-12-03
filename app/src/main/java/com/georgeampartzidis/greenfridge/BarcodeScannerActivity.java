@@ -167,7 +167,7 @@ public class BarcodeScannerActivity extends AppCompatActivity implements ZXingSc
 
         try {
             JSONObject jsonObject = new JSONObject(result);
-            String status = jsonObject.getString("status_verbose");
+            String status = jsonObject.optString("status_verbose");
             if (status.equalsIgnoreCase("product_found") || status.equalsIgnoreCase("product found")){
                 JSONObject productObject = jsonObject.optJSONObject("product");
                 String productBrand = productObject.optString("brands");
